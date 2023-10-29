@@ -8,3 +8,20 @@ const userTaskList = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+const newTask = {id: 5, task: "Walk the dog"};
+userTaskList.push(newTask);
+
+
+userTaskList.pop();
+
+
+for (let i = 0; i < userTaskList.length; i++) {
+  if (userTaskList[i].id === 4) {
+      userTaskList[i].task = "Go to the gym"
+      break;
+  }
+};
+
+
+const lastTask = userTaskList[userTaskList.length - 1]. task;
+console.log(`Task id: 4, ${lastTask}`);
